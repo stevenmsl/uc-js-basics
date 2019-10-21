@@ -3,6 +3,16 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+/*
+//Exploring Number Methods
+console.log(Number.prototype);
+console.log(99..toFixed(4)); //returns a string of value 99.0000  Note: 99.toFixed(4) won't work 
+console.log((99).toFixed(4)); //returns a string of value 99.0000
+console.log(parseFloat(99.12345678.toFixed(4))); //99.1235
+console.log(99.12345678.toPrecision(5)); //99.123
+console.log((99.12345678).toPrecision(5)); //99.123 Add parentheses, (99.12345678), to avoid confusion.
+console.log(new Number(99).valueOf()); //99
+*/
 
 /*
 //Correctly Type-Checking Number
