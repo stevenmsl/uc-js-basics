@@ -3,6 +3,18 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+
+/*
+//Numbers and Immutability
+//const just means immutableNumber can not be re-assigned any more. 
+//Has nothing to do with immutability 
+const immutableNumber = 99;
+let referencedNumber = immutableNumber;
+referencedNumber = 55;
+console.log(immutableNumber);
+console.log(referencedNumber);
+*/
+
 /*
 //understanding Not-a-Number
 const result = Number('55px');
