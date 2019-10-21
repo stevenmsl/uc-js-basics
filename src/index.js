@@ -5,6 +5,18 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 
 /*
+//Correctly Type-Checking Number
+console.log(typeof 99.66); //number
+console.log(99 instanceof Number); //false - literal is not an instance of Number 
+console.log(Number('99') instanceof Number); //false - Number('99') gives you a literal 99
+//constructor syntax, creates a wrapper object - avoid using it
+console.log(new Number('99') instanceof Number); //true   
+//odd way to accurately determine the type
+console.log(Object.prototype.toString.call(99)); // [object Number]
+console.log(Object.prototype.toString.call(99).slice(8, -1) === 'Number');
+*/
+
+/*
 //Numbers and Immutability
 //const just means immutableNumber can not be re-assigned any more. 
 //Has nothing to do with immutability 
