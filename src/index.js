@@ -3,6 +3,30 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+//Exploring String Methods
+
+//Correctly Type-Checking Strings
+
+//Strings and Immutability 
+
+//String Properties and Indexes 
+
+/*
+//String Literal, Function, and Constructor Syntax
+console.log('Pizza "Hello!"');
+const pizza = 'Pepperoni';
+console.log('Pizza is: ' + pizza + '!');
+console.log(`
+Pizza is:
+${pizza}!
+`);
+
+console.log(String(55 + 11), 55 + '11'); //66, 5511 (55 will be converted to string first and then concatenate with 11)
+console.log(String({name: 'Pepperoni'}), {name: 'Pepperoni'}.toString()); //[object Object] [object Object]
+console.log(String([1, 2, 3, 4]), [1, 2, 3, 4].toString()); //1,2,3,4 1,2,3,4
+console.log(new String(55)); // {"55"}, constructor syntax, creates a wrapper object 
+*/
+
 /*
 //Exploring Number Methods
 console.log(Number.prototype);
