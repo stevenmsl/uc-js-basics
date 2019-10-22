@@ -4,6 +4,24 @@ const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 /*
+//Correctly Type-Checking Booleans
+console.log(typeof false); //boolean
+console.log(true instanceof Boolean); //false
+console.log(new Boolean('X') instanceof Boolean);
+console.log(Object.prototype.toString.call(true));//[object Boolean]
+*/
+
+/*
+//Boolean Literal, Function and Constructor Syntax
+console.log(true, false);
+const arg = 'X';
+console.log(Boolean(arg)); //true
+console.log(!!arg); //true using double bang
+console.log(Boolean([])); //true - empty array
+console.log(Boolean({})); //true - empty object
+console.log(new Boolean(arg)); //wrapper 
+*/
+/*
 //Exploring String Methods
 console.log(String.prototype);
 console.log('Pepperoni'.indexOf('P')); //0, case sensitive
