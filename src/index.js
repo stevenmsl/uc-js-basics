@@ -10,6 +10,13 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 //Strings and Immutability 
 
 //String Properties and Indexes 
+console.log(new String(5599));
+console.log('Pepperoni'.length); //9
+
+const pizza = 'P e p p e r o n i';
+console.log(pizza[0], pizza[pizza.length - 1], pizza.length); //P i 17
+
+
 
 /*
 //String Literal, Function, and Constructor Syntax
