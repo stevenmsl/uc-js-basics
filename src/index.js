@@ -7,16 +7,22 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Correctly Type-Checking Strings
 
+/*
 //Strings and Immutability 
+const immutableString = 'I shall not change!';
 
+//Would simply make a copy of the string and then modify it. The original string remain intact
+const uppercaseString = immutableString.toUpperCase();
+console.log(immutableString, uppercaseString);
+*/
+/*
 //String Properties and Indexes 
 console.log(new String(5599));
 console.log('Pepperoni'.length); //9
 
 const pizza = 'P e p p e r o n i';
 console.log(pizza[0], pizza[pizza.length - 1], pizza.length); //P i 17
-
-
+*/
 
 /*
 //String Literal, Function, and Constructor Syntax
