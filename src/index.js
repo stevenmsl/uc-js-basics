@@ -5,8 +5,13 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Exploring String Methods
 
+/*
 //Correctly Type-Checking Strings
-
+console.log(typeof 'Pepperoni'); //string
+console.log('Pepperoni' instanceof String); //false
+console.log(new String('Pepperoni') instanceof String); //true
+console.log(Object.prototype.toString.call('Pepperoni')); //[object String]
+*/
 /*
 //Strings and Immutability 
 const immutableString = 'I shall not change!';
