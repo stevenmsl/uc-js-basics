@@ -3,7 +3,19 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+/*
 //Exploring String Methods
+console.log(String.prototype);
+console.log('Pepperoni'.indexOf('P')); //0, case sensitive
+console.log('Pepperoni'.includes('P')); //true
+console.log('Pepperoni'.replace('oni', 'fire')); //Pepperfire
+console.log('Pepperoni'.replace(/oni$/,'fire')); //Pepperfire using regular esxpression 
+console.log('Pepperoni'.slice(2, -3)); //pper
+
+console.log('Pepperoni~Plain'.split('~')[1]); //Plain
+console.log('Pepperoni~Plain'.split(/~/)[1]); //Plain
+console.log('   4444 5555 6666 7777   '.trim()); //4444 5555 6666 7777
+*/
 
 /*
 //Correctly Type-Checking Strings
