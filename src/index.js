@@ -15,8 +15,21 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Rest Parameters and Arguments
 
+/*
 //Function Parameters and Defaults
+function makeCar(name = 'Porsche') { // default value: ECMA2015
+    //name = name || 'Porsche';
+    //if (!name) {
+    //    name = 'Porsche'
+    //}
+    console.log(`Making car: 
+    ${name.toUpperCase()}`);
+}
 
+makeCar('Porsche');
+makeCar('Ferrari');
+makeCar();
+*/
 
 /*
 //Function Declarations and Expressions
