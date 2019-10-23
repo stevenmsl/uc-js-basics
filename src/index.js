@@ -3,6 +3,54 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+//Functions and "this"
+
+//Functions and Callbacks
+
+//Immediately-Invoked Function Expressions
+
+//Function Closures and Scope
+
+//Function Return Values
+
+//Rest Parameters and Arguments
+
+//Function Parameters and Defaults
+
+
+/*
+//Function Declarations and Expressions
+
+//hoisting
+console.log(makeCar); //hoisted - function declaration
+console.log(makeCarExpression); //undefined - not hoisted
+console.log(makeCarArrow); //undefined - not hoisted
+console.log(makeCarArrowShorthand); //undefined - not hoisted 
+
+
+// 1: Function Declaration
+function makeCar() {
+    console.log('Making car...');
+}
+makeCar();
+//2: Function Expression (anonymous or named)
+const makeCarExpression = function myFunction() {};
+console.log(makeCarExpression.name); //myFunction (named)
+const anotherMakeCarExpression = function () {};
+console.log(anotherMakeCarExpression.name); //anotherMakeCarExpression (anonymous)
+
+//3: Arrow Function
+const makeCarArrow = () => {
+    console.log('Making car inside Arrow...');
+};
+
+makeCarArrow();
+
+const makeCarArrowShorthand = () => console.log('Short');
+makeCarArrowShorthand();
+
+*/
+
 /*
 //Correctly Type-Checking Booleans
 console.log(typeof false); //boolean
