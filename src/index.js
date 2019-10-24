@@ -11,7 +11,18 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Function Closures and Scope
 
+/*
 //Function Return Values
+function makeCarPrice(...params) {
+    const total = params.reduce((prev, next) => prev + next);
+    return total;
+}
+
+const makeCarPriceArrow = (...params) => params.reduce((prev, next) => prev + next); //Implicit return 
+
+console.log(`Total: ${makeCarPrice(11, 22, 33, 44, 55, 66)}`);
+console.log(`Total: ${makeCarPriceArrow(99, 77, 44)}`);
+*/
 
 /*
 //Rest Parameters and Arguments
