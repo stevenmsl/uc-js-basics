@@ -7,7 +7,23 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Functions and Callbacks
 
-//Immediately-Invoked Function Expressions
+/*
+//Immediately-Invoked Function Expressions (IIFE)
+
+const carPartId = (function(id){
+    const theId = `CAR_PRT_${id}`;
+    return function(name) {
+        return `${theId}_${name}`;
+    };
+})('x7H8sFf');
+
+console.log(carPartId); //The definition you see in the console is already converted by Babel. 
+                        //Use source map (click on index.js:xx) to find the source code.
+console.log(carPartId('Left Door'));
+console.log(carPartId('Right Door'));
+console.log(carPartId('Windscreen'));
+*/
+
 
 /*
 //Function Closures and Scope
