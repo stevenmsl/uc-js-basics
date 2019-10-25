@@ -9,7 +9,27 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Immediately-Invoked Function Expressions
 
+/*
 //Function Closures and Scope
+function makeCarPartId(id) {
+    const theId = `CAR_PART_${id}`; 
+    return function(name) {
+        return `${theId}_${name.toUpperCase()}`;
+    }    
+}
+
+const carPartId = makeCarPartId('x8YdsZ12');
+//the following parts should all have the same ID
+console.log(carPartId('Left Door'));
+console.log(carPartId('Right Door'));
+console.log(carPartId('Windscreen'));
+
+const anotherCarPartId = makeCarPartId('7hs9zSaq0');
+console.log(anotherCarPartId('Left Door'));
+console.log(anotherCarPartId('Right Door'));
+console.log(anotherCarPartId('Windscreen'));
+
+*/
 
 /*
 //Function Return Values
