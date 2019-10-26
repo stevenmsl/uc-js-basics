@@ -23,7 +23,27 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Shorthand Properties and Methods
 
+/*
 //Properties, Methods, and Values
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemondae',
+    price: 99,
+    getDrinkDetails() {
+        return `Drink ${this.name} (${this.price})`;
+    },
+    'abc 123': 'I am the value',
+    100: 'I am a number'
+};
+
+const myId = 'id';
+
+console.log(drink[myId]);
+console.log(drink.name);
+console.log(drink.price);
+console.log(drink['abc 123']);
+console.log(drink[100]); //same as drink['100']
+*/
 
 /*
 //Object Literal, Function and Constructor Syntax
