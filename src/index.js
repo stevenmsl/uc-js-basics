@@ -3,6 +3,49 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+//Declarative Object Iteration
+
+//Imperative Object Iteration
+
+//Correctly Type-Checking Objects
+
+//Merging Objects
+
+//Shallow and Deep Object Cloning
+
+//Removing Object Properties
+
+//Adding and Updating Object Properties
+
+//Property and Value Existence Checking
+
+//Destructuring Object Properties
+
+//Shorthand Properties and Methods
+
+//Properties, Methods, and Values
+
+/*
+//Object Literal, Function and Constructor Syntax
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129    
+    },
+};
+
+const drinkReference = drink;
+drinkReference.name = 'Peach'; //by reference
+
+console.log(drink === drinkReference); //true, pointing to the same object
+
+console.log({} instanceof Object); //true
+console.log(new Object() instanceof Object); //true
+console.log(Object() instanceof Object); //true, internally it will call new Object() 
+*/
+
 /*
 //Functions and "this"
 const firstCar = { id: 'x8KszK0'};
