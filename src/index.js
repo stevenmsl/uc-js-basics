@@ -3,10 +3,47 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+/*
 //Functions and "this"
+const firstCar = { id: 'x8KszK0'};
+const secondCar = { id: 'bc90slqa'};
+const thirdCar = { id: 'h9sNsa'};
 
+function carPartId(name, quantity) {
+    console.log(`${this.id}_${name}_${quantity}`);
+}
+
+const boundThirdCar = carPartId.bind(thirdCar); //Context is now thirdCar
+boundThirdCar('Windscreen', 99);
+boundThirdCar('Exhaust', 9);
+
+//call = c = commas
+carPartId.call(firstCar, 'Left Door', 12); //Passing parameters individually
+//apply = a = array
+carPartId.apply(secondCar, ['Right Door', 21]);
+
+*/
+
+
+/*
 //Functions and Callbacks
+function carPartId(name, fn) {
+    const theId = `CAR_PART_x8z0sl`;
+    return fn(`${theId}_${name}`); //call the callback and return its return value 
+}
 
+const carPart = carPartId('Left Door', 
+    function(id){
+        console.log(`Car Part ID: ${id}`);    
+    });
+console.log(carPart); //Callback is executed, but it doesn’t return any value. So carPart is undefined.
+
+const anotherCarPart = carPartId('Left Door', 
+    function(id){
+        return(`Car Part ID: ${id}`);    
+    });
+console.log(anotherCarPart); //log out the return value from the callback
+*/
 /*
 //Immediately-Invoked Function Expressions (IIFE)
 
