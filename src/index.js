@@ -21,7 +21,23 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Destructuring Object Properties
 
+/*
 //Shorthand Properties and Methods
+const id = 'xhs8Pla'; //use variable as the property name
+const name = 'Lemonade';
+const price = 99;
+const someKey = 'name'; //use value as the property name
+const drink = {
+    id, // id: "xhs8Pla"
+    [someKey]: name, //name: "Lemonade"
+    price,
+    getDrinkDetails() {
+        return `Drink ${this.name} (${this.price})`;
+    }
+};
+
+console.log(drink);
+*/
 
 /*
 //Properties, Methods, and Values
