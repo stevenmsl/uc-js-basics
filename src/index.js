@@ -17,7 +17,44 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Adding and Updating Object Properties
 
+/*
 //Property and Value Existence Checking
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+    //Very unlikely you would do this (override the hasOwnProperty method), 
+    //but this is just to show that calling hasOwnProperty on an object is not 
+    //the safest way to determine if an object has a certain property
+    hasOwnProperty() {
+        return false;
+    }
+};
+
+//value exists
+
+if(drink.id) {
+    console.log(drink.id);
+}
+
+for (const prop in drink) {
+    if(drink[prop] === 'Lemonade') {
+        console.log(drink[prop]);
+    }
+}
+
+console.log(Object.values(drink));
+const hasLemonade = Object.values(drink).includes('Lemonade'); 
+console.log(hasLemonade); //true
+
+//Property exists
+console.log(drink.hasOwnProperty('name')); //Return false as the hasOwnProperty has been mistakenly overrode
+console.log(Object.prototype.hasOwnProperty.call(drink,'name')); //return true as expected 
+console.log(Object.keys(drink).includes('name')); //true
+*/
 
 /*
 //Destructuring Object Properties
