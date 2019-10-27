@@ -3,7 +3,25 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+/*
 //Declarative Object Iteration
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+};
+//doesn’t not iterate over inherited properties 
+Object.keys(drink).forEach(function (prop) {
+    console.log(drink[prop], prop);
+});
+//Object.entries() returns an array whose elements are arrays corresponding 
+//to the enumerable string-keyed property [key, value] pairs found directly upon object. 
+console.log(Object.entries(drink));
+*/
+
 /*
 //Imperative Object Iteration
 const drink = {
