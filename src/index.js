@@ -11,7 +11,36 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Merging Objects
 
+/*
 //Shallow and Deep Object Cloning
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+}
+//deep copy. completely detached from the original object
+const drinkStringified = JSON.stringify(drink);
+const drinkDeepClone = JSON.parse(drinkStringified);
+drinkDeepClone.id = 'abcd';
+drinkDeepClone.price.sale = 79;
+console.log(drink, drinkDeepClone); //drink remains intact
+
+//shallow copies, only the top level properties are copied
+
+const drinkClone1 = Object.assign({}, drink);
+const drinkClone2 = {...drink};
+
+drinkClone1.id = 'abcd';
+drinkClone2.id = 'efgh';
+drinkClone1.price.sale = 50;
+drinkClone2.price.full = 120;
+//All three are going to have the same sale price and full price 
+//as their price property is pointing to the same object (by reference).
+console.log(drink, drinkClone1, drinkClone2); 
+*/
 
 /*
 //Removing Object Properties
