@@ -13,7 +13,34 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Shallow and Deep Object Cloning
 
+/*
 //Removing Object Properties
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+}
+//does not mutate the original object
+const { price, ...rest } = drink;
+console.log(price, rest, drink); //drink still has the price property as it has not been mutated.
+
+//quicker way to ‘delete’ a property
+drink.id = undefined;
+
+if (drink.id) { // value existence Checking
+    console.log('has ID...'); //this won’t be printed 
+}
+console.log(drink.hasOwnProperty('id')); //true
+
+//Physically delete the property, slow
+delete drink.id;
+console.log(drink.hasOwnProperty('id')); //false
+
+*/
+
 
 /*
 //Adding and Updating Object Properties
