@@ -19,7 +19,35 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Property and Value Existence Checking
 
+/*
 //Destructuring Object Properties
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129,
+    },
+};
+
+//old way of destructuring
+const myDrinkId = drink.id;
+const myDrinkName = drink.name;
+const myDrinkSalePrice = drink.price.sale;
+console.log(myDrinkId, myDrinkName, myDrinkSalePrice);
+
+//new way of destructuring
+const {
+    id: myId, //rename id to myId
+    price: { full },
+    ...rest //remaining properties
+} = drink;
+
+const { sale, full: fullPrice } = drink.price;
+console.log(sale, fullPrice);
+console.log(myId, full, rest);
+console.log(rest.name);
+*/
 
 /*
 //Shorthand Properties and Methods
