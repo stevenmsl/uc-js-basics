@@ -9,7 +9,28 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Correctly Type-Checking Objects
 
+/*
 //Merging Objects
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+};
+const price = {
+    sale: 99,
+    full: 129,
+}
+
+const mergedDrink1 = Object.assign({}, drink, price);
+//the strucutre is not quite exactly what we expected 
+//as the ‘full’ and ‘sale’ properties are not scoped to the price property
+console.log(mergedDrink1);
+
+const mergedDrink2 = Object.assign({}, drink, { price });
+console.log(mergedDrink2); 
+
+const mergedDrink3 = { ...drink, ...{ price } };
+console.log(mergedDrink3);
+*/
 
 /*
 //Shallow and Deep Object Cloning
