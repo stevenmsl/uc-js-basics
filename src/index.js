@@ -4,10 +4,69 @@ const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Declarative Object Iteration
-
+/*
 //Imperative Object Iteration
+const drink = {
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+};
 
+const drinkWithId = Object.create(drink); //inherit from drink
+drinkWithId.id = 'xhs8Pla';
+console.log(drinkWithId); //check __proto__ and you will find name and price properties 
+
+for (const prop in drinkWithId) {
+    if(drinkWithId.hasOwnProperty(prop)) {
+        console.log(prop, drinkWithId[prop]);
+    }
+}
+
+console.log('-----')
+
+//for..in
+//sale, full
+for(const prop in drink) {
+    const value = drink[prop];
+    if( Object.prototype.toString.call(value) === '[object Object]' ) {
+        for (const key in value) {
+            console.log(key);
+        }
+    }
+}
+
+*/
+
+/*
 //Correctly Type-Checking Objects
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+};
+
+function getType(obj) {
+    return Object.prototype.toString
+        .call(obj).slice(8, -1).toLowerCase();
+}
+
+//not very useful in distinguish object from array and null in type-checking.
+console.log(typeof drink); //object
+console.log(typeof []); //object
+console.log(typeof null); //object
+
+console.log({} instanceof Object); //true
+console.log([] instanceof Object); //true
+
+console.log(getType(drink)); //object 
+console.log(getType(null)); //null
+console.log(getType([])); //array
+*/
 
 /*
 //Merging Objects
@@ -41,7 +100,7 @@ const drink = {
         sale: 99,
         full: 129
     },
-}
+};
 //deep copy. completely detached from the original object
 const drinkStringified = JSON.stringify(drink);
 const drinkDeepClone = JSON.parse(drinkStringified);
@@ -72,7 +131,7 @@ const drink = {
         sale: 99,
         full: 129
     },
-}
+};
 //does not mutate the original object
 const { price, ...rest } = drink;
 console.log(price, rest, drink); //drink still has the price property as it has not been mutated.
