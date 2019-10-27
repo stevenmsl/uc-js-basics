@@ -15,7 +15,27 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Removing Object Properties
 
+/*
 //Adding and Updating Object Properties
+const drink = {
+    id: 'xhs8Pla',
+    name: 'Lemonade',
+    price: {
+        sale: 99,
+        full: 129
+    },
+}
+
+function propUpdate(prop, value) {
+    drink[prop] = value; //property will be added if it has not existed yet    
+}
+
+propUpdate('brand', 'My Drinks Co.');
+propUpdate('name', 'Lime');
+
+console.log(drink);
+*/
+
 
 /*
 //Property and Value Existence Checking
