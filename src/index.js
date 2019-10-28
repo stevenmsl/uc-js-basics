@@ -26,7 +26,33 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Shallow and Deep Array Cloning 
 
+/*
 //Finding Array Elements
+const drinks = ['Lemonade', 'Lime', 'Peach'];
+const index = drinks.indexOf('Lime');//case sensitive 
+console.log(index);
+if (index !== -1) {
+    console.log(drinks[index]);
+}
+
+const included = drinks.includes('Peach');
+console.log(included);
+
+const drinksWithId = [
+    { id: 1, name: 'Lemonade'},
+    { id: 2, name: 'Lime'},
+    { id: 3, name: 'Peach'},
+];
+
+//deal with more complex structure 
+const idIndex = drinksWithId.findIndex(
+    value => value.name === 'Peach');
+console.log(drinksWithId[idIndex]);
+
+const foundItem = drinksWithId.find(
+    value => value.name === 'Peach');
+console.log(foundItem);
+*/
 
 /*
 //Removing Array Elements
