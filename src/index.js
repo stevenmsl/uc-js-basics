@@ -17,8 +17,14 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Imperative Array Iteration
 
-
+/*
 //Correctly Type-Checking Arrays
+console.log(typeof []) //object, so this can’t be used to type-checking arrays 
+console.log([] instanceof Array); //true
+console.log(new Array() instanceof Array); //true
+console.log(Array.isArray([1, 2, 3, 4])); //true
+console.log(Object.prototype.toString.call([])); //[object Array]
+*/
 
 /*
 //Reversing and Sorting Arrays
