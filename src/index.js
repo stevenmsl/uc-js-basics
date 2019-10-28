@@ -6,7 +6,25 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 //Declarative Iteration with Array.reduce
 
 //Declarative Iteration with Array.filter
+const drinks = [
+    { id: 1, name: 'Pepsi'},
+    { id: 2, name: 'Lemonade'},
+    { id: 3, name: 'Cola'}
+];
 
+const drink = [];
+for (let i = 0; i < drinks.length; i++) { //using ‘let’ as i mutates (i++)
+    if(drinks[i].id === 2 || drinks[i].id === 3) {
+        drink.push(drinks[i]);
+    }   
+}
+console.log(drink);
+
+const theId = 3;
+const selectedDrink = drinks.filter(value => value.id === theId);
+console.log(selectedDrink);
+
+/*
 //Declarative Iteration with Array.map 
 const drinks = ['Pepsi', 'Lemonade', 'Cola'];
 const drinkLengths = [];
@@ -17,6 +35,7 @@ console.log(drinkLengths);
 
 const mappedDrink = drinks.map(value => value.length);
 console.log(mappedDrink);
+*/
 
 /*
 //Declarative Iteration with Array.forEach
