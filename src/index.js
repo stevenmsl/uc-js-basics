@@ -11,7 +11,21 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Declarative Iteration with Array.forEach
 
+/*
 //Iteration with for...of
+const drinks = ['Pepsi', 'Lemonade', 'Cola'];
+
+for (let i = 0; i < drinks.length; i++) { //using ‘let’ as i mutates (i++)
+    const drink = drinks[i];
+    console.log(drink);   
+}
+
+for (const drink of drinks) {
+    console.log(drink);
+}
+
+console.log([1, 2, 3]); //iterable
+*/
 
 /*
 //Iteration with Break and Continue
