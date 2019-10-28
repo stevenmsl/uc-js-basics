@@ -3,6 +3,54 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+//Declarative Iteration with Array.reduce
+
+//Declarative Iteration with Array.filter
+
+//Declarative Iteration with Array.map 
+
+//Declarative Iteration with Array.forEach
+
+//Iteration with for...of
+
+//Iteration with Break and Continue
+
+//Imperative Array Iteration
+
+
+//Correctly Type-Checking Arrays
+
+//Reversing and Sorting Arrays
+
+//Merging Arrays
+
+//Shallow and Deep Array Cloning 
+
+//Finding Array Elements
+
+//Removing Array Elements
+
+//Adding Array Elements
+
+//Destructuring Arrays
+
+//Multi-dimensional Arrays
+
+//Properties, Indexes and Elements 
+
+//Array Literal, Function and Constructor Syntax
+
+const drinks = ['Lemonade', 'Lime', 'Peach'];
+const drinksReference = drinks;
+
+console.log(drinks);
+console.log(drinksReference === drinks); //true, by reference
+
+console.log(new Array('Lemonade', 'Lime', 'Peach'));
+console.log(Array('Lemonade', 'Lime', 'Peach')); //This internally will call new Array().
+
+
+
 /*
 //Declarative Object Iteration
 const drink = {
