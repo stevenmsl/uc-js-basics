@@ -13,8 +13,23 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Iteration with for...of
 
+/*
 //Iteration with Break and Continue
+const drinks = ['Pepsi', 'Lemonade', 'Cola'];
+let count = 0;
+for (let i = 0; i < drinks.length; i++) {
+    const drink = drinks[i];
+    if (drink === 'Lemonade') {
+        console.log('Pour me a class!');
+        continue; 
+        //break;
+    } 
+    count++;   
+}
+console.log(count); //continue: 2, break: 1
+*/
 
+/*
 //Imperative Array Iteration
 const drinks = ['Pepsi', 'Lemonade', 'Cola'];
 
@@ -24,7 +39,7 @@ for (let i = 0; i < drinks.length; i++) {
         console.log('Pour me a class!');
     }    
 }
-
+*/
 /*
 //Correctly Type-Checking Arrays
 console.log(typeof []) //object, so this can’t be used to type-checking arrays 
