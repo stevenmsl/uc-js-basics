@@ -23,8 +23,41 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 //Reversing and Sorting Arrays
 
 //Merging Arrays
+const drinks1 =[['Lemonade', 99], ['Lime', 99]]; //2-D
+const newDrinks1 = [['Peach', 89]]; //2-D
+const merged1 = drinks1.concat(newDrinks1); 
+merged1[0][1] = 1000; //by reference
+merged1[2][1] = 1000; //by reference
+console.log(drinks1, newDrinks1, merged1);
 
+const drinks2 =[['Lemonade', 99], ['Lime', 99]]; //2-D
+const newDrinks2 = ['Peach', 89]; //1-D
+const merged2 = [newDrinks2, ...drinks2];
+merged2[0][1] = 1000; //by reference
+merged2[2][1] = 1000; //by reference
+console.log(drinks2, newDrinks2, merged2);
+
+
+/*
 //Shallow and Deep Array Cloning 
+
+//shallow
+const drinks1 =[['Lemonade', 99], ['Lime', 99], ['Peach', 89]];
+const drinksClone1 = [...drinks1];
+drinksClone1[0][1] = 1000;
+console.log(drinks1, drinksClone1); //by reference, so both drinks1[0][1] and drinksClone1[0][1] are 1000 now
+const drinksClone2 = drinks1.slice();
+drinksClone2[1][1] = 1000;
+console.log(drinks1, drinksClone1, drinksClone2);
+const drinksClone3 = Array.from(drinks1);
+drinksClone3[2][1] = 1000;
+console.log(drinks1, drinksClone1, drinksClone2, drinksClone3);
+//deep
+const drinks2 =[['Lemonade', 99], ['Lime', 99], ['Peach', 89]];
+const drinksClone5 = JSON.parse(JSON.stringify(drinks2));
+drinksClone5[0][1] = 1000;
+console.log(drinks2, drinksClone5);
+*/
 
 /*
 //Finding Array Elements
