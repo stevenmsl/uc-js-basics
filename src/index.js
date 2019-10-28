@@ -8,7 +8,17 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 //Declarative Iteration with Array.filter
 
 //Declarative Iteration with Array.map 
+const drinks = ['Pepsi', 'Lemonade', 'Cola'];
+const drinkLengths = [];
+for (let i = 0; i < drinks.length; i++) { //using ‘let’ as i mutates (i++)
+    drinkLengths.push(drinks[i].length);   
+}
+console.log(drinkLengths);
 
+const mappedDrink = drinks.map(value => value.length);
+console.log(mappedDrink);
+
+/*
 //Declarative Iteration with Array.forEach
 const drinks = ['Pepsi', 'Lemonade', 'Cola'];
 
@@ -22,6 +32,8 @@ drinks.forEach((value, index, array) => {
     }
     console.log(array[index]);
 });
+*/
+
 /*
 //Iteration with for...of
 const drinks = ['Pepsi', 'Lemonade', 'Cola'];
