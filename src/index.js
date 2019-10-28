@@ -3,8 +3,26 @@ import '../assets/css/style.css';
 const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
+/*
 //Declarative Iteration with Array.reduce
+const drinks = [
+    { price: 220, name: 'Pepsi'},
+    { price: 170, name: 'Lemonade'},
+    { price: 200, name: 'Cola'}
+];
 
+let total = 0;
+for (let i = 0; i < drinks.length; i++) { //using ‘let’ as i mutates (i++)
+    total += drinks[i].price;
+}
+console.log(total);
+//Once you provided a initial value, the prev parameter is the initial value, 
+//which in this case is a number (0). The next parameter is then an object with price and name properties.
+const value = drinks.reduce((prev, next) => prev + next.price, 0); 
+console.log(value);
+*/
+
+/*
 //Declarative Iteration with Array.filter
 const drinks = [
     { id: 1, name: 'Pepsi'},
@@ -23,6 +41,7 @@ console.log(drink);
 const theId = 3;
 const selectedDrink = drinks.filter(value => value.id === theId);
 console.log(selectedDrink);
+*/
 
 /*
 //Declarative Iteration with Array.map 
