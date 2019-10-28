@@ -34,12 +34,32 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Destructuring Arrays
 
+/*
 //Multi-dimensional Arrays
+const drinks =[['Lemonade', 99], ['Lime', 99], ['Peach', 89]];
+console.log(`Drink: ${drinks[0][0]}, Price ${drinks[0][1]}`);
+*/
 
-//Properties, Indexes and Elements 
+/*
+//Properties, Indexes and Elements
+const drinks = ['Lemonade', 'Lime', 'Peach'];
+drinks[0] = 'Diet Lemonade'; //by reference
+drinks['favourite'] = 'Cola'; //This has no difference with adding a new property to an object. 
+                              //The array length remains at 3 however.
 
+console.log(drinks);
+console.log(drinks[0]); //First element; 0-based
+console.log(drinks[drinks.length-1]); //the very last element 
+
+drinks.length = 0; //Wipe out an array
+//same thing
+//drinks.splice(0, drinks.length);
+
+console.log(drinks); //Length is now 0. However, ‘favourite’ property is still there.
+*/
+
+/*
 //Array Literal, Function and Constructor Syntax
-
 const drinks = ['Lemonade', 'Lime', 'Peach'];
 const drinksReference = drinks;
 
@@ -48,7 +68,7 @@ console.log(drinksReference === drinks); //true, by reference
 
 console.log(new Array('Lemonade', 'Lime', 'Peach'));
 console.log(Array('Lemonade', 'Lime', 'Peach')); //This internally will call new Array().
-
+*/
 
 
 /*
