@@ -10,7 +10,18 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 //Declarative Iteration with Array.map 
 
 //Declarative Iteration with Array.forEach
+const drinks = ['Pepsi', 'Lemonade', 'Cola'];
 
+for (let i = 0; i < drinks.length; i++) { //using ‘let’ as i mutates (i++)
+    console.log(drinks[i]);   
+}
+
+drinks.forEach((value, index, array) => {
+    if (value === 'Cola') {
+        console.log(value, index);
+    }
+    console.log(array[index]);
+});
 /*
 //Iteration with for...of
 const drinks = ['Pepsi', 'Lemonade', 'Cola'];
