@@ -20,8 +20,26 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Correctly Type-Checking Arrays
 
+/*
 //Reversing and Sorting Arrays
+const drinks1 = [
+    { name: 'Lemonade', price: 79},
+    { name: 'Peach', price: 99},
+    { name: 'Lime', price: 89}
+];
+console.log(drinks1.reverse()); //mutable
+console.log(drinks1);
 
+const drinks2 = [
+    { name: 'Lemonade', price: 79},
+    { name: 'Peach', price: 99},
+    { name: 'Lime', price: 89}
+];
+console.log(drinks2.sort((a,b) => b.price - a.price)); //mutable
+console.log(drinks2);
+*/
+
+/*
 //Merging Arrays
 const drinks1 =[['Lemonade', 99], ['Lime', 99]]; //2-D
 const newDrinks1 = [['Peach', 89]]; //2-D
@@ -36,7 +54,7 @@ const merged2 = [newDrinks2, ...drinks2];
 merged2[0][1] = 1000; //by reference
 merged2[2][1] = 1000; //by reference
 console.log(drinks2, newDrinks2, merged2);
-
+*/
 
 /*
 //Shallow and Deep Array Cloning 
