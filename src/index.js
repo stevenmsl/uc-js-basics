@@ -32,8 +32,13 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Adding Array Elements
 
+/*
 //Destructuring Arrays
-
+const drinks =[['Lemonade', 99], ['Lime', 99], ['Peach', 89]];
+//[,b] -Ignores the first element ‘Lime’; just pick up the second element 99
+const [one, [,b], ...rest] = drinks; 
+console.log(one, b, rest);
+*/
 /*
 //Multi-dimensional Arrays
 const drinks =[['Lemonade', 99], ['Lime', 99], ['Peach', 89]];
