@@ -28,9 +28,64 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 //Finding Array Elements
 
+/*
 //Removing Array Elements
+const drinks = ['Lemonade', 'Lime', 'Peach'];
+console.log(drinks);
 
+//Immutable
+const index = drinks.length - 1;
+const newDrinks = [...drinks.slice(0, index), ...drinks.slice(index + 1)];
+console.log(newDrinks);
+console.log(drinks);
+
+//mutable 
+//end
+const removed = drinks.pop();
+console.log(removed);
+//beginning
+const removed2 = drinks.shift();
+console.log(removed2);
+console.log(drinks);
+*/
+/*
 //Adding Array Elements
+const drinks1 = ['Lemonade', 'Lime', 'Peach'];
+console.log(drinks1); //This is super weird as the length is 2 not 3; 
+                      //if you copy the code to somewhere else the length is 3.
+//immutable 
+console.log(['Water', ...drinks1]); //Add an element to the beginning. Drinks array remains unchanged.
+console.log([...drinks1, 'Beer']); //end
+
+//middle - should be immutable
+
+console.log(drinks1);
+
+const index = 1;
+console.log([
+    //return the deleted element ‘Lemonade’.
+    
+    ...drinks1.splice(0, index), 
+    'Mojito',
+    //return the deleted elements 'Lime' and 'Peach'
+   ...drinks1.splice(index - 1),
+]);
+
+console.log(drinks1);
+
+//mutable
+const drinks2 = ['Lemonade', 'Lime', 'Peach'];
+//middle 
+drinks2.splice(index, 0, 'Mojito'); 
+console.log(drinks2);
+//begin
+drinks2.unshift('Water');
+console.log(drinks2);
+//end
+drinks2.push('Cola');
+console.log(drinks2);
+*/
+
 
 /*
 //Destructuring Arrays
